@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Oracle of God — ONG agro-écologique à Kinshasa Gombe.">
+  <title>Contact - Oracle of God</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="skeleton" class="skeleton-overlay">
+    <div class="skeleton-content">
+      <div class="skeleton-logo"></div>
+      <div class="skeleton-line"></div>
+      <div class="skeleton-line short"></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Accueil Oracle of God">
+        <img src="assets/logo.png" alt="Logo Oracle of God" class="logo-img">
+        <div class="logo-text">
+          <strong>Oracle of God</strong>
+          <small>Vision axée sur le développement</small>
+        </div>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="index.html#apropos" class="nav-link">Qui sommes-nous</a>
+        <a href="index.html#actualites" class="nav-link">Actualités</a>
+        <a href="contact.html" class="nav-link btn-nav active">Nous écrire</a>
+        <div class="nav-contact-mobile">
+          <p class="nav-contact-label">Nous joindre</p>
+          <p class="nav-contact-address">
+            1 avenue de la Paix<br>
+            Galerie Présidentielle, local 1M4<br>
+            Kinshasa – Gombe
+          </p>
+          <p class="nav-contact-phones">
+            <a href="tel:+243859175755">+243 853 073 430</a>
+          </p>
+        </div>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-page">
+      <div class="container">
+        <div class="contact-page-header">
+          <h1>Nous écrire</h1>
+          <p>Une question, un partenariat, ou juste envie d’en savoir plus, laissez-nous un message.</p>
+        </div>
+
+        <div class="contact-page-grid">
+          <!-- Formulaire à gauche -->
+          <div class="contact-form-wrap">
+            <form class="contact-form contact-form--page" id="contactForm">
+              <div class="form-row form-row--3">
+                <div class="form-group">
+                  <label for="nom">Nom <span class="req">*</span></label>
+                  <input type="text" id="nom" name="nom" required placeholder="Ex. Mukendi">
+                </div>
+                <div class="form-group">
+                  <label for="postnom">Post-nom <span class="req">*</span></label>
+                  <input type="text" id="postnom" name="postnom" required placeholder="Ex. Kalala">
+                </div>
+                <div class="form-group">
+                  <label for="prenom">Prénom <span class="req">*</span></label>
+                  <input type="text" id="prenom" name="prenom" required placeholder="Ex. Jean">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email <span class="opt">(optionnel)</span></label>
+                  <input type="email" id="email" name="email" placeholder="vous@exemple.com">
+                </div>
+                <div class="form-group">
+                  <label for="telephone">Téléphone <span class="req">*</span></label>
+                  <input type="tel" id="telephone" name="telephone" required placeholder="+243 …">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="req">*</span></label>
+                <textarea id="message" name="message" rows="6" required placeholder="Écrivez votre message ici…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+              <p class="form-success" id="formSuccess" hidden>
+                Merci. On a bien reçu votre message et on vous revient vers vous dès que possible.
+              </p>
+            </form>
+          </div>
+
+          <!-- Infos + carte à droite -->
+          <aside class="contact-aside">
+            <div class="contact-info-card">
+              <div class="contact-info-block">
+                <h3>Adresse</h3>
+                <p>
+                  1 avenue de la Paix<br>
+                  Ancienne Galerie Présidentielle<br>
+                  Local 1M4<br>
+                  Kinshasa – Gombe<br>
+                  République Démocratique du Congo
+                </p>
+              </div>
+
+              <div class="contact-info-block">
+                <h3>Email</h3>
+                <p><a href="mailto:contact@oracleofgod.org">contact@oracleofgod.org</a></p>
+              </div>
+
+              <div class="contact-info-block">
+                <h3>Téléphone</h3>
+                <p>
+                  <a href="tel:+243859175755">+243 853 073 430</a><br>
+                </p>
+              </div>
+
+              <div class="contact-info-block">
+                <h3>Heures d’ouverture</h3>
+                <ul class="hours-list">
+                  <li><span>Lundi – Vendredi</span><span>08h00 – 16h30</span></li>
+                  <li><span>Samedi</span><span>09h00 – 13h00</span></li>
+                  <li><span>Dimanche</span><span>Fermé</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="contact-map">
+              <iframe
+                title="Localisation Oracle of God — Kinshasa Gombe"
+                src="https://www.google.com/maps?q=1+Avenue+de+la+Paix,+Gombe,+Kinshasa,+RD+Congo&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo Oracle of God" class="logo-img">
+          <div class="logo-text">
+            <strong>Oracle of God</strong>
+            <small>Vision axée sur le développement</small>
+          </div>
+        </div>
+        <p>
+          ONG agro-écologique en RDC.
+          Agriculture, élevage, forêts — pour que les communautés
+          vivent un peu mieux de leur terre.
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#apropos">Qui sommes-nous</a>
+        <a href="index.html#actualites">Actualités</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-address">
+        <p>
+          1 avenue de la Paix<br>
+          Galerie Présidentielle, local 1M4<br>
+          Kinshasa – Gombe
+        </p>
+        <p class="footer-phone">
+          <a href="tel:+243859175755">+243 853 073 430</a><br>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Oracle of God · ONG/ASBL</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
