@@ -3,13 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contactez Oracle of God — ONG agro-écologique à Kinshasa Gombe.">
-  <title>Contact - Oracle of God</title>
+  <meta name="description" content="Contactez Oracle of God — ONG agro-écologique à Kinshasa Gombe. Formulaire de contact, téléphone et adresse.">
+  <title>Contact | Oracle of God – Nous écrire</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact | Oracle of God" />
+  <meta property="og:description" content="Contactez Oracle of God — ONG agro-écologique à Kinshasa Gombe." />
+  <meta property="og:image" content="https://nathanolongo51.github.io/oracle-of-god/assets/og-image.jpg" />
+  <meta property="og:url" content="https://nathanolongo51.github.io/oracle-of-god/contact.html" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact | Oracle of God" />
+  <meta name="twitter:description" content="Contactez Oracle of God - ONG agro-écologique à Kinshasa Gombe." />
+  <meta name="twitter:image" content="https://nathanolongo51.github.io/oracle-of-god/assets/asset_1.jpg" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>if(location.protocol!=='https:'&&!/^(localhost|127\.0\.0\.1)$/.test(location.hostname))location.replace('https:'+location.href.substring(location.protocol.length));</script>
 </head>
 <body>
   <div id="skeleton" class="skeleton-overlay">
@@ -42,7 +53,7 @@
             Kinshasa – Gombe
           </p>
           <p class="nav-contact-phones">
-            <a href="tel:+243859175755">+243 853 073 430</a>
+            <a href="tel:+243853073430">+243 853 073 430</a>
           </p>
         </div>
       </nav>
@@ -63,36 +74,41 @@
         <div class="contact-page-grid">
           <!-- Formulaire à gauche -->
           <div class="contact-form-wrap">
-            <form class="contact-form contact-form--page" id="contactForm">
+            <form class="contact-form contact-form--page" id="contactForm" novalidate>
+              <!-- Honeypot anti-spam (ne pas remplir) -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="website">Site web</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
               <div class="form-row form-row--3">
                 <div class="form-group">
                   <label for="nom">Nom <span class="req">*</span></label>
-                  <input type="text" id="nom" name="nom" required placeholder="Ex. Mukendi">
+                  <input type="text" id="nom" name="nom" required minlength="2" maxlength="60" placeholder="Ex. Mukendi" autocomplete="family-name">
                 </div>
                 <div class="form-group">
                   <label for="postnom">Post-nom <span class="req">*</span></label>
-                  <input type="text" id="postnom" name="postnom" required placeholder="Ex. Kalala">
+                  <input type="text" id="postnom" name="postnom" required minlength="2" maxlength="60" placeholder="Ex. Kalala" autocomplete="additional-name">
                 </div>
                 <div class="form-group">
                   <label for="prenom">Prénom <span class="req">*</span></label>
-                  <input type="text" id="prenom" name="prenom" required placeholder="Ex. Jean">
+                  <input type="text" id="prenom" name="prenom" required minlength="2" maxlength="60" placeholder="Ex. Jean" autocomplete="given-name">
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <label for="email">Email <span class="opt">(optionnel)</span></label>
-                  <input type="email" id="email" name="email" placeholder="vous@exemple.com">
+                  <input type="email" id="email" name="email" maxlength="120" placeholder="vous@exemple.com" autocomplete="email">
                 </div>
                 <div class="form-group">
                   <label for="telephone">Téléphone <span class="req">*</span></label>
-                  <input type="tel" id="telephone" name="telephone" required placeholder="+243 …">
+                  <input type="tel" id="telephone" name="telephone" required minlength="9" maxlength="20" pattern="[0-9+\s\-]{9,20}" placeholder="+243 …" autocomplete="tel">
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="message">Message <span class="req">*</span></label>
-                <textarea id="message" name="message" rows="6" required placeholder="Écrivez votre message ici…"></textarea>
+                <textarea id="message" name="message" rows="6" required minlength="10" maxlength="2000" placeholder="Écrivez votre message ici…"></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
@@ -124,7 +140,7 @@
               <div class="contact-info-block">
                 <h3>Téléphone</h3>
                 <p>
-                  <a href="tel:+243859175755">+243 853 073 430</a><br>
+                  <a href="tel:+243853073430">+243 853 073 430</a><br>
                 </p>
               </div>
 
@@ -185,7 +201,7 @@
           Kinshasa – Gombe
         </p>
         <p class="footer-phone">
-          <a href="tel:+243859175755">+243 853 073 430</a><br>
+          <a href="tel:+243853073430">+243 853 073 430</a><br>
         </p>
       </div>
     </div>

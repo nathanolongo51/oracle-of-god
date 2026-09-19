@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page introuvable — Oracle of God" />
+  <title>Page introuvable | Oracle of God</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>if(location.protocol!=='https:'&&!/^(localhost|127\.0\.0\.1)$/.test(location.hostname))location.replace('https:'+location.href.substring(location.protocol.length));</script>
+  <style>
+    .error-page {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 22px 60px;
+    }
+    .error-page h1 {
+      font-size: clamp(3rem, 10vw, 5rem);
+      color: var(--blue);
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .error-page p {
+      color: var(--ink-soft);
+      max-width: 420px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Accueil Oracle of God">
+        <img src="assets/logo.png" alt="Logo Oracle of God" class="logo-img" />
+        <div class="logo-text">
+          <strong>Oracle of God</strong>
+          <small>Vision axée sur le développement</small>
+        </div>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="index.html#apropos" class="nav-link">Qui sommes-nous</a>
+        <a href="index.html#actualites" class="nav-link">Actualités</a>
+        <a href="contact.html" class="nav-link btn-nav">Nous écrire</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-page">
+      <div>
+        <h1>404</h1>
+        <p>Cette page n’existe pas ou a été déplacée. Retournez à l’accueil pour découvrir Oracle of God.</p>
+        <a href="index.html" class="btn btn-primary">Retour à l’accueil</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo Oracle of God" class="logo-img" />
+          <div class="logo-text">
+            <strong>Oracle of God</strong>
+            <small>Vision axée sur le développement</small>
+          </div>
+        </div>
+        <p>
+          ONG agro-écologique en RDC.
+          Agriculture, élevage, forêts pour que les communautés
+          vivent un peu mieux de leur terre.
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#apropos">Qui sommes-nous</a>
+        <a href="index.html#actualites">Actualités</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-address">
+        <p>
+          1 avenue de la Paix<br />
+          Galerie Présidentielle, local 1M4<br />
+          Kinshasa – Gombe
+        </p>
+        <p class="footer-phone">
+          <a href="tel:+243853073430">+243 853 073 430</a><br />
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Oracle of God · ONG/ASBL</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

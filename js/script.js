@@ -76,6 +76,12 @@ if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    // Anti-spam honeypot
+    const hp = (document.getElementById('website')?.value || '').trim();
+    if (hp) {
+      return; // bot detected, silently ignore
+    }
+
     // Récupération et nettoyage des saisies
     const rawNom = (document.getElementById('nom')?.value || '').trim();
     const rawPostnom = (document.getElementById('postnom')?.value || '').trim();
@@ -84,8 +90,35 @@ if (contactForm) {
     const telephone = (document.getElementById('telephone')?.value || '').trim();
     const message = (document.getElementById('message')?.value || '').trim();
 
-    if (!rawNom || !rawPostnom || !rawPrenom || !telephone || !message) {
-      alert('Veuillez remplir tous les champs obligatoires.');
+    // Validation
+    if (!rawNom || rawNom.length < 2) {
+      alert('Veuillez indiquer un nom valide (au moins 2 caractères).');
+      document.getElementById('nom')?.focus();
+      return;
+    }
+    if (!rawPostnom || rawPostnom.length < 2) {
+      alert('Veuillez indiquer un post-nom valide (au moins 2 caractères).');
+      document.getElementById('postnom')?.focus();
+      return;
+    }
+    if (!rawPrenom || rawPrenom.length < 2) {
+      alert('Veuillez indiquer un prénom valide (au moins 2 caractères).');
+      document.getElementById('prenom')?.focus();
+      return;
+    }
+    if (!telephone || telephone.replace(/\D/g, '').length < 9) {
+      alert('Veuillez indiquer un numéro de téléphone valide.');
+      document.getElementById('telephone')?.focus();
+      return;
+    }
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Veuillez indiquer une adresse e-mail valide ou laisser le champ vide.');
+      document.getElementById('email')?.focus();
+      return;
+    }
+    if (!message || message.length < 10) {
+      alert('Veuillez écrire un message d’au moins 10 caractères.');
+      document.getElementById('message')?.focus();
       return;
     }
 
@@ -103,19 +136,16 @@ if (contactForm) {
 
     texteBrut += `\n${message}`;
 
-    // Encodage complet pour WhatsApp
+    // Encodage complet pour WhatsApp (lien côté client, pas d’API exposée)
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texteBrut)}`;
 
-    // Animation du bouton
     const btn = contactForm.querySelector('button[type="submit"]');
     const original = btn.textContent;
     btn.textContent = 'Ouverture WhatsApp…';
     btn.disabled = true;
 
-    // Ouverture de WhatsApp
     window.open(url, '_blank');
 
-    // Réinitialisation du formulaire
     setTimeout(() => {
       if (formSuccess) formSuccess.hidden = false;
       contactForm.reset();
