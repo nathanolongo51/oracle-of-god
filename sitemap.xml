@@ -11,8 +11,23 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://nathanolongo51.github.io/oracle-of-god/equipe.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nathanolongo51.github.io/oracle-of-god/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nathanolongo51.github.io/oracle-of-god/mentions-legales.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://nathanolongo51.github.io/oracle-of-god/politique-confidentialite.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

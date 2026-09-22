@@ -171,3 +171,65 @@ if (btnTop) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+/* ===== Gestion des cookies ===== */
+(function () {
+  const CONSENT_KEY = 'oog_cookie_consent';
+  const banner = document.getElementById('cookieBanner');
+  const acceptBtn = document.getElementById('cookieAccept');
+  const refuseBtn = document.getElementById('cookieRefuse');
+  const settingsBtn = document.getElementById('cookieSettingsBtn');
+
+  function getConsent() {
+    try {
+      return localStorage.getItem(CONSENT_KEY);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function setConsent(value) {
+    try {
+      localStorage.setItem(CONSENT_KEY, value);
+    } catch (e) {
+      /* ignore */
+    }
+  }
+
+  function hideBanner() {
+    if (banner) {
+      banner.hidden = true;
+    }
+  }
+
+  function showBanner() {
+    if (banner) {
+      banner.hidden = false;
+    }
+  }
+
+  // Afficher la bannière si aucun choix n'a été fait
+  if (!getConsent()) {
+    // Petit délai pour ne pas bloquer le chargement initial
+    setTimeout(showBanner, 800);
+  }
+
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', () => {
+      setConsent('accepted');
+      hideBanner();
+    });
+  }
+
+  if (refuseBtn) {
+    refuseBtn.addEventListener('click', () => {
+      setConsent('refused');
+      hideBanner();
+    });
+  }
+
+  if (settingsBtn) {
+    settingsBtn.addEventListener('click', () => {
+      showBanner();
+    });
+  }
+})();

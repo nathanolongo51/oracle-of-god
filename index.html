@@ -43,6 +43,7 @@
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="index.html#apropos" class="nav-link">Qui sommes-nous</a>
+        <a href="equipe.html" class="nav-link">Équipe</a>
         <a href="index.html#actualites" class="nav-link">Actualités</a>
         <a href="contact.html" class="nav-link btn-nav">Nous écrire</a>
         <div class="nav-contact-mobile">
@@ -109,7 +110,7 @@
         <div class="about-layout">
           <div class="about-text">
             <span class="section-tag">Qui sommes-nous</span>
-            <h2>Une petite organisation, des actions concrètes</h2>
+            <h2>Une organisation, des actions concrètes</h2>
             <p>
               Oracle of God est une ONG/ASBL basée à Kinshasa (Gombe).
               On s’est spécialisés en agro-écologie et en agro-pastoral parce que c’est
@@ -368,7 +369,10 @@
         <a href="index.html">Accueil</a>
         <a href="index.html#apropos">Qui sommes-nous</a>
         <a href="index.html#actualites">Actualités</a>
+        <a href="equipe.html">Équipe</a>
         <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
       </nav>
       <div class="footer-address">
         <p>
@@ -382,11 +386,30 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container">
+      <div class="container footer-bottom-inner">
         <p>© 2026 Oracle of God · ONG/ASBL</p>
+        <button type="button" class="cookie-settings-btn" id="cookieSettingsBtn" aria-label="Gérer les cookies">Gérer les cookies</button>
       </div>
     </div>
   </footer>
+
+  <!-- Bannière cookies -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc" hidden>
+    <div class="cookie-banner-inner">
+      <div class="cookie-banner-text">
+        <p id="cookieTitle" class="cookie-banner-title">Cookies</p>
+        <p id="cookieDesc">
+          Ce site utilise uniquement des cookies nécessaires à son fonctionnement.
+          Aucun cookie publicitaire ou de suivi n’est déposé sans votre accord.
+          <a href="politique-confidentialite.html#cookies">En savoir plus</a>
+        </p>
+      </div>
+      <div class="cookie-banner-actions">
+        <button type="button" class="btn btn-primary" id="cookieAccept">Accepter</button>
+        <button type="button" class="btn-cookie-refuse" id="cookieRefuse">Refuser</button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
