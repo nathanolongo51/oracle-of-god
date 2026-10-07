@@ -49,7 +49,7 @@ body {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
   line-height: 1.75;
 }
 
@@ -1866,5 +1866,289 @@ img, iframe {
   .member-card {
     width: 100%;
     max-width: 200px;
+  }
+}
+
+/* ===== Bureaux provinciaux (page Équipe) ===== */
+.offices-section {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.offices-header {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 28px;
+}
+
+.offices-header h2 {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 8px 0 8px;
+  letter-spacing: -0.02em;
+}
+
+.offices-intro {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.office-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px 18px;
+  text-align: center;
+  transition: border-color var(--ease);
+}
+
+.office-card:hover {
+  border-color: #c8d0dc;
+}
+
+.office-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #eef2f7;
+  color: var(--blue-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.office-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.office-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.office-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.office-detail {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.office-province {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted);
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 768px) {
+  .offices-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .offices-section {
+    margin-top: 40px;
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .offices-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .office-card {
+    padding: 16px 12px;
+  }
+}
+/* ===== Offices on top of team page ===== */
+.offices-section--top {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  margin-bottom: 48px;
+}
+
+/* ===== Team accordions (by province) ===== */
+.teams-accordion-section {
+  margin-top: 8px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.teams-accordion-header {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 28px;
+}
+
+.teams-accordion-header h2 {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 8px 0 8px;
+  letter-spacing: -0.02em;
+}
+
+.teams-accordion-intro {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.team-accordion {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  background: #0f1c2e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background var(--ease);
+}
+
+.accordion-trigger:hover {
+  background: #152538;
+}
+
+.accordion-item.is-open .accordion-trigger {
+  background: #0c5a9e;
+}
+
+.accordion-trigger-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.accordion-province {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.accordion-role-label {
+  font-size: 0.78rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.accordion-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--ease), border-color var(--ease);
+}
+
+.accordion-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.accordion-item.is-open .accordion-icon {
+  transform: rotate(180deg);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.accordion-panel {
+  background: var(--white);
+  border-top: 3px solid var(--blue);
+}
+
+.accordion-panel[hidden] {
+  display: none;
+}
+
+.accordion-panel-inner {
+  padding: 24px 16px 28px;
+}
+
+.province-team-note {
+  max-width: 560px;
+  margin: 0 auto 20px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.org-chart--compact {
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .offices-section--top {
+    margin-bottom: 36px;
+  }
+
+  .teams-accordion-section {
+    padding-top: 32px;
+  }
+
+  .accordion-trigger {
+    padding: 14px 14px;
+  }
+
+  .accordion-province {
+    font-size: 0.95rem;
+  }
+
+  .accordion-panel-inner {
+    padding: 18px 10px 22px;
   }
 }

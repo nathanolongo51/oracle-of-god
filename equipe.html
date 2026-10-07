@@ -39,8 +39,8 @@
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="index.html#apropos" class="nav-link">Qui sommes-nous</a>
-        <a href="equipe.html" class="nav-link active">Équipe</a>
         <a href="index.html#actualites" class="nav-link">Actualités</a>
+        <a href="equipe.html" class="nav-link active">Équipe</a>
         <a href="contact.html" class="nav-link btn-nav">Nous écrire</a>
         <div class="nav-contact-mobile">
           <p class="nav-contact-label">Nous joindre</p>
@@ -65,103 +65,239 @@
       <div class="container">
         <div class="team-header">
           <span class="section-tag">Organisation</span>
-          <h1>Équipe dirigeante</h1>
+          <h1>Équipe et bureaux</h1>
           <p class="team-intro">
-            Les responsables d’Oracle of God, engagés au service des communautés
-            rurales en RDC.
+            Nos implantations en RDC et les responsables d’Oracle of God,
+            engagés au service des communautés rurales.
           </p>
         </div>
 
-        <!-- Structure hiérarchique identique à l’organigramme -->
-        <div class="org-chart" role="list">
-
-          <!-- Niveau 1 : Président -->
-          <div class="org-row org-row--1" role="listitem">
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        
+          <div class="offices-grid">
+            <article class="office-card">
+              <div class="office-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/>
+                </svg>
               </div>
-              <p class="member-role">Président</p>
-              <p class="member-name">Jean René MAYELE</p>
+              <p class="office-label">Siège national</p>
+              <h3 class="office-name">Kinshasa – Gombe</h3>
+              <p class="office-detail">
+                1 avenue de la Paix<br />
+                Galerie Présidentielle, local 1M4<br />
+                Kinshasa – Gombe
+              </p>
+              <p class="office-province">Province de Kinshasa</p>
+            </article>
+
+            <article class="office-card">
+              <div class="office-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <p class="office-label">Bureau provincial</p>
+              <h3 class="office-name">Tshela</h3>
+              <p class="office-detail">
+                Territoire de Tshela<br />
+                Siège opérationnel inauguré en 2024
+                </p>
+              <p class="office-province">Province du Kongo Central</p>
+            </article>
+
+            <article class="office-card">
+              <div class="office-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <p class="office-label">Bureau provincial</p>
+              <h3 class="office-name">Mai-Ndombe</h3>
+              <p class="office-detail">
+                Province du Mai-Ndombe
+              </p>
+              <p class="office-province">Province du Mai-Ndombe</p>
             </article>
           </div>
-
-          <!-- Niveau 2 : Secrétaires -->
-          <div class="org-row org-row--2" role="listitem">
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Secrétaire Général</p>
-              <p class="member-name">Franck LONGO</p>
-            </article>
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Secrétaire Exécutif</p>
-              <p class="member-name">Eugène NTOTO</p>
-            </article>
-          </div>
-
-          <!-- Niveau 3 : Coordinateurs -->
-          <div class="org-row org-row--3" role="listitem">
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Coordonnateur Administratif</p>
-              <p class="member-name">Hergé KONDE</p>
-            </article>
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Coordonnateur de Programme et Projets</p>
-              <p class="member-name">Albert MBUNGU</p>
-            </article>
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Coordinatrice Chargée des Finances</p>
-              <p class="member-name">Adeline LUHUNU</p>
-            </article>
-          </div>
-
-          <!-- Niveau 4 : Chargés de mission -->
-          <div class="org-row org-row--4" role="listitem">
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Chargé des Questions Juridiques</p>
-              <p class="member-name">Michel NZUZI</p>
-            </article>
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Chargé des Questions Genre et Famille</p>
-              <p class="member-name">Augustine MANZAMBI</p>
-            </article>
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Chargé des questions Administratives</p>
-              <p class="member-name">Honoré MAVUNGU</p>
-            </article>
-            <article class="member-card">
-              <div class="member-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <p class="member-role">Trésorière</p>
-              <p class="member-name">Gina KHELE</p>
-            </article>
-          </div>
-
         </div>
+
+        <!-- Équipes dirigeantes par province (accordéons) -->
+        <div class="teams-accordion-section">
+          <div class="teams-accordion-header">
+            <span class="section-tag">Direction</span>
+            <h2>Équipes dirigeantes</h2>
+            <p class="teams-accordion-intro">
+              Découvrez l’équipe nationale et la coordination par province.
+            </p>
+          </div>
+
+          <div class="team-accordion" id="teamAccordion">
+
+            <!-- Kinshasa -->
+            <div class="accordion-item is-open">
+              <button type="button" class="accordion-trigger" aria-expanded="true" aria-controls="panel-kinshasa" id="trigger-kinshasa">
+                <span class="accordion-trigger-text">
+                  <span class="accordion-province">Kinshasa – Gombe</span>
+                  <span class="accordion-role-label">Siège national · Équipe dirigeante</span>
+                </span>
+                <span class="accordion-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </button>
+              <div class="accordion-panel" id="panel-kinshasa" role="region" aria-labelledby="trigger-kinshasa">
+                <div class="accordion-panel-inner">
+                  <div class="org-chart" role="list">
+                    <div class="org-row org-row--1" role="listitem">
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Président</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                    </div>
+                    <div class="org-row org-row--2" role="listitem">
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Secrétaire Général</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Secrétaire Exécutif</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                    </div>
+                    <div class="org-row org-row--3" role="listitem">
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Coordonnateur Administratif</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Coordonnateur de Programme et Projets</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Coordinatrice Chargée des Finances</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                    </div>
+                    <div class="org-row org-row--4" role="listitem">
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Chargé des Questions Juridiques</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Chargé des Questions Genre et Famille</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Chargé des questions Administratives</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Trésorière</p>
+                        <p class="member-name">A définir</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tshela -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="panel-tshela" id="trigger-tshela">
+                <span class="accordion-trigger-text">
+                  <span class="accordion-province">Tshela</span>
+                  <span class="accordion-role-label">Kongo Central · Bureau provincial</span>
+                </span>
+                <span class="accordion-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </button>
+              <div class="accordion-panel" id="panel-tshela" role="region" aria-labelledby="trigger-tshela" hidden>
+                <div class="accordion-panel-inner">
+                  <p class="province-team-note">
+                    Le bureau de Tshela (siège opérationnel inauguré en 2024) met en œuvre
+                    les projets d’agriculture et d’accompagnement des paysans sous la
+                    coordination de l’équipe nationale basée à Kinshasa.
+                  </p>
+                  <div class="org-chart org-chart--compact" role="list">
+                    <div class="org-row org-row--1" role="listitem">
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Coordination nationale</p>
+                        <p class="member-name">Équipe dirigeante Kinshasa</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mai-Ndombe -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="panel-maindombe" id="trigger-maindombe">
+                <span class="accordion-trigger-text">
+                  <span class="accordion-province">Mai-Ndombe</span>
+                  <span class="accordion-role-label">Bureau provincial · Ferme agro-pastorale</span>
+                </span>
+                <span class="accordion-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </button>
+              <div class="accordion-panel" id="panel-maindombe" role="region" aria-labelledby="trigger-maindombe" hidden>
+                <div class="accordion-panel-inner">
+                  <p class="province-team-note">
+                    La ferme agro-pastorale du Mai-Ndombe (élevage et lutte contre la faim)
+                    est pilotée sous la supervision de l’équipe nationale d’Oracle of God.
+                  </p>
+                  <div class="org-chart org-chart--compact" role="list">
+                    <div class="org-row org-row--1" role="listitem">
+                      <article class="member-card">
+                        <div class="member-avatar" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <p class="member-role">Coordination nationale</p>
+                        <p class="member-name">Équipe dirigeante Kinshasa</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   </main>

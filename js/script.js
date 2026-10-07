@@ -233,3 +233,38 @@ if (btnTop) {
     });
   }
 })();
+
+/* ===== Accordion équipes par province ===== */
+(function () {
+  const root = document.getElementById('teamAccordion');
+  if (!root) return;
+
+  root.querySelectorAll('.accordion-trigger').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.accordion-item');
+      if (!item) return;
+      const panel = item.querySelector('.accordion-panel');
+      const isOpen = item.classList.contains('is-open');
+
+      // Fermer les autres
+      root.querySelectorAll('.accordion-item.is-open').forEach((openItem) => {
+        if (openItem === item) return;
+        openItem.classList.remove('is-open');
+        const p = openItem.querySelector('.accordion-panel');
+        const t = openItem.querySelector('.accordion-trigger');
+        if (p) p.hidden = true;
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+
+      if (isOpen) {
+        item.classList.remove('is-open');
+        if (panel) panel.hidden = true;
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('is-open');
+        if (panel) panel.hidden = false;
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
